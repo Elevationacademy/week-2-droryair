@@ -1,0 +1,132 @@
+.container{
+    width:100vw;
+    height: 100vh;
+    display:grid;
+    background-color: #CEE0DC;
+    grid-template-areas: 
+    "h h h h h "
+    "m m m m m "
+    "m m m m m "
+    "m m m m m "
+    "m m m m m "
+    "m m m m m "
+    "m m m m m "
+    "m m m m m "
+    "f f f f f ";
+}
+
+    /* HEAD */
+.head{
+    grid-area: h;
+    height: 80%;
+    background-color: #AFAAB9;
+    display:grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    justify-items: center;
+    align-items: center;
+
+}
+    /* icon */
+.fab{
+    font-size: 3rem;
+    display: inline-flex;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.heading{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+    /* MAIN */
+.main{
+    grid-area: m;
+    background-color: #CEE0DC;
+    display: grid;
+    grid-template-columns: 1fr 4fr  2fr;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#side-nav{
+    margin-right:20px;
+    display:grid;
+    grid-template-columns: 1fr;
+}
+.letter{
+    margin: 2px;
+    border-style: solid;
+    /* border */
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+
+}
+
+
+.cols{
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.col{
+    margin:2px;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+
+
+.info{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+#long-info{
+    /* border */
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.info-icon{
+    font-size: 2rem;
+}
+#long-info-header{
+    display:inline-flex;
+    margin : 0;
+
+}
+#short-info{
+        /* border */
+        border-style: solid;
+        border-width: 2px;
+        border-color: black;
+        text-align: center;
+        display:inline-flex;
+
+}
+
+
+
+    /* FOOTER */
+.footer{
+    grid-area: f;
+    background-color: #B48291;
+    text-align: center;
+    justify-content: center;
+}
+
+/* handling fonts */
+.long-text{
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+}
+.head-font{
+    font-family: 'Prompt', sans-serif;
+}
