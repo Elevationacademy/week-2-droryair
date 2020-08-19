@@ -31,16 +31,7 @@ let MelonCount = 0
 const onClick = function(){
     if($(this).data().instock){
         console.log(cart)
-        for (item in cart){
-            if ($('#cart:unth-child(item)').text() === "Shoe" ){
-                ShoeCount++
-                $('#cart:unth-child(item)').text("Shoe " +ShoeCount )
-            }else{
-                MelonCount++
-                $('#cart:unth-child(item)').text("Melon " +MelonCount )
-            }
-        }
-     cart.append(`<div class="cart-item">${$(this).text()}</div>`)
+        cart.append(`<div class="cart-item">${$(this).text()}</div>`)
     }
 }
 $('.item').on('click',onClick)
@@ -52,6 +43,15 @@ const remove = function(){
 }
 cart.on('click','.cart-item',remove)
 
+// for (item in cart){
+//     if ($('#cart:unth-child(item)').text() === "Shoe" ){
+//         ShoeCount++
+//         $('#cart:unth-child(item)').text("Shoe " +ShoeCount )
+//     }else{
+//         MelonCount++
+//         $('#cart:unth-child(item)').text("Melon " +MelonCount )
+//     }
+// }
 
 
 // EXERCISES 3,5 EXTENSIONS (CHALLENGING)
