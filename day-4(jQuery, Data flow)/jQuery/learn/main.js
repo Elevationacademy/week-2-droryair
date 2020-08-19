@@ -105,5 +105,15 @@
 // $('#blogs').on('click', changeText)
 
 
+// // SPOT CHECK 13
+// $('#blogs').text("BLOGS")
 
+// const addDivToBlog = function(){
+//     $('#blogs').append($('<div class = "blog">The same text</div>'))
+// }
 
+// const changeText = function(){
+//     $(this).text ("blargh")
+// }
+// $('#post').on('click', addDivToBlog)
+// $('body').on('click', ".blog", changeText)
